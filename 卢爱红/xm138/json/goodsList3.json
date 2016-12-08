@@ -1,0 +1,176 @@
+{
+  "success": true,
+  "msg": "请求成功 (200)",
+  "code": 200,
+  "data": [
+    {
+      "id": 1,
+      "style":"韩版",
+      "title": "2016秋新款 cachecache 欧美涂鸦翻领呢大衣 4816001136",
+       "content":" 玩味十足  显瘦百搭",
+      "img": "../img/goodList3/1.jpg",
+      "price": "399",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 2,
+      "style":"小清新",
+      "title": "2016冬新款 cachecache 时尚可爱印花中长款针织衫 4525007480",
+       "content":"买三送一",
+      "img": "../img/goodList3/2.jpg",
+      "price": "998",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 3,
+      "style":"森女系",
+      "title": "香莉婷2016秋冬新款韩版宽松长袖针织打底白色凤凰套头刺绣毛衣女",
+      "content":" 保暖时尚  简约百搭 高端时尚典雅",
+      "img": "../img/goodList3/3.jpg",
+      "price": "1999",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 4,
+      "style":"情侣装",
+      "title": "2016秋冬款女装新款修身显瘦裙子冬季加厚长袖打底裙子针织连衣裙",
+        "content":" 纯棉舒适 百搭",
+      "img": "../img/goodList3/4.jpg",
+      "price": "2899",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 5,
+      "style":"文艺",
+      "title": "new t-shirt时尚潮流女装绑带纯色钉珠亮片上衣T",
+      "content":" 纯棉舒适 百搭",
+      "img": "../img/goodList3/5.jpg",
+      "price": "69",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 6,
+      "style":"复古",
+      "title": "母亲节妈妈装立领印花复古文艺范短袖连衣裙",
+      "content":" 时尚与众不同 合适新款式 优质有档次",
+      "img": "../img/goodList3/6.jpg",
+      "price": "19",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 7,
+      "style":"小萝莉",
+      "title": "奈昕115499 定制旗舰店短袖连衣裙蕾丝蝴蝶袖圆领欧美风气质粉色",
+      "content":" 奈昕定制 时尚与众不同 合适新款式 优质有档次",
+      "img": "../img/goodList3/7.jpg",
+      "price": "9.9",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 8,
+      "style":"运动",
+      "content":" 冬季折扣 2件8折 3件7折 4件6折 3件包邮",
+      "title": "CCDD2016春秋新款专柜正品田园大花热带风印花暗纹提花无袖连衣裙",
+      "img": "../img/goodList3/8.jpg",
+      "price": "688",
+      "url": "goodsDetail.html"
+    },
+    
+     {
+      "id": 1,
+      "style":"韩版",
+      "title": "欧美涂鸦翻领呢大衣 ",
+       "content":" 玩味十足  显瘦百搭",
+      "img": "../img/index/1.jpg",
+      "price": "399",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 2,
+      "style":"小清新",
+      "title": "印花中长款针织衫 ",
+       "content":"买三送一",
+      "img": "../img/index/2.jpg",
+      "price": "998",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 3,
+      "style":"森女系",
+      "title": "白色凤凰套头刺绣毛衣女",
+      "content":" 保暖时尚  简约百搭 高端时尚典雅",
+      "img": "../img/index/3.jpg",
+      "price": "1999",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 4,
+      "style":"情侣装",
+      "title": "长袖打底裙子针织连衣裙",
+        "content":" 纯棉舒适 百搭",
+      "img": "../img/index/4.jpg",
+      "price": "2899",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 5,
+      "style":"文艺",
+      "title": "纯色钉珠亮片上衣T",
+      "content":" 纯棉舒适 百搭",
+      "img": "../img/index/5.jpg",
+      "price": "69",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 6,
+      "style":"复古",
+      "title": "文艺范短袖连衣裙",
+      "content":" 时尚与众不同 合适新款式 优质有档次",
+      "img": "../img/index/6.jpg",
+      "price": "19",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 7,
+      "style":"小萝莉",
+      "title": "圆领欧美风气质粉色",
+      "content":" 奈昕定制 时尚与众不同 合适新款式 优质有档次",
+      "img": "../img/index/7.jpg",
+      "price": "9.9",
+      "url": "goodsDetail.html"
+    },
+    {
+      "id": 8,
+      "style":"运动",
+      "content":" 冬季折扣 2件8折 3件7折 4件6折 3件包邮",
+      "title": "提花无袖连衣裙",
+      "img": "../img/index/8.jpg",
+      "price": "688",
+      "url": "goodsDetail.html"
+    },
+    
+    {
+      "id": 9,
+      "style":"运动",
+      "content":" 冬季折扣 2件8折 3件7折 4件6折 3件包邮",
+      "title": "暗纹提花无袖连衣裙",
+      "img": "../img/index/10.jpg",
+      "price": "688",
+      "url": "goodsDetail.html"
+    },
+    
+    {
+      "id": 10,
+      "style":"运动",
+      "content":" 冬季折扣 2件8折 3件7折 4件6折 3件包邮",
+      "title": "花暗纹提花无袖连衣裙",
+      "img": "../img/index/11.jpg",
+      "price": "688",
+      "url": "goodsDetail.html"
+    }
+    
+    
+    
+    
+  ]
+}

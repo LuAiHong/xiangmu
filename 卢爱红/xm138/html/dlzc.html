@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>login</title>
+	<meta charset="utf-8" />
+ 
+   
+        <link href="../libs/common/common.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+        <link rel="stylesheet" href="../css/zhucedenglu.css" />
+        <link rel="stylesheet" href="../css/jquery.idcode.css" />
+    
+       <script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script> 
+ 
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+
+		<script type="text/javascript" src="../js/zhucedenglu.js" ></script>
+	
+		<script type="text/javascript" src="../js/jquery.idcode.js" ></script>
+	
+	
+ 
+</head>
+<body style="background: rgb(249,249,249);">
+     <div id="zhucdl">
+        <div id="zcdlu">
+            <div id="zcdl">
+                <div class="zhucedenglu">
+                    <ul>
+                        <li class="zhuce"><a href="#" target="_self">注册</a></li>
+                        <li class="denglu"><a href="#" target="_self" >登录</a></li>
+                    </ul>
+                </div>
+                <div class="zhuce-left">
+                    <form name="form" id="zhuce-left1">
+                        <ul class="zhuce-left2">
+                            <li>
+                                <label class="label" for="email">输入手机号：</label>
+                                <div class="inputCont">
+                                    <input type="text" id="number" placeholder="请填入手机号">
+                                    <div id="numberTip" class="Tip"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="label" for="email"> 请设置密码：</label>
+                                <div class="inputCont">
+                                    <input type="password" id="password1" placeholder="请填入密码" maxlength="20" onpaste="return false">
+                                    <div id="password1Tip" class="Tip"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <label class="label" for="email">请确认密码：</label>
+                                <div class="inputCont">
+                                    <input type="password" id="password2" placeholder="请再次填写密码" maxlength="20" onpaste="return false">
+                                    <div id="password2Tip" class="Tip"></div>
+                                </div>
+                            </li>
+                          <li id="check-code">
+                            <label class="label" for="code"> 输入验证码：</label>
+                            <div class="inputCont">
+                                <div class="yanzhengma">
+                                    <input type="text" id ="Txtidcode" class ="txtVerification">
+                                    <span id="idcode"></span>
+                                </div>
+                                <div id="yzTip" class="Tip">
+                                </div>
+                            </div>
+                        </li>
+                            
+                        <li id="mobile-code">
+                            <label class="label" for="code">短信验证码：</label>
+                            <div class="inputCont">
+                                <div class="duanxin">
+                                    <input type="text" id="message" maxlength="4">
+                                   <input type="button" id="butn1" value="3355">
+                                </div>
+                                <div id="messageTip" class="Tip"></div>
+                            </div>
+                       </li>
+                    <li id="tongyi">
+                                <label class="label"> &nbsp;</label>
+                                <div class="inputCon">
+                                    <div class="tongyi1">
+                                        <input type="checkbox" id="agreement" class="checkbox" checked="checked">
+                                    
+                                            <span class="agreement-text">阅读并同意<a href="http://www.muyingzhijia.com/help/agreement.aspx" target="_blank">"母婴之家网站用户协议"</a></span>
+                                     
+                                    </div>
+                                    <div id="agreementTip" class="Tip">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="tijiao">
+                                <label> &nbsp;</label>
+                                <div class="tijiao">
+                                    <div class="tijiao1">
+                                        <input type="submit" id="butn2" name="reg_btn" class="submit-signup" value="提交注册">
+                                    </div>
+                                   <div id="zhuceTip" class="Tip"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="hezuo">
+                            <div class="hezuo1">使用合作网站账号登录帮5买:</div>
+                            <ul class="hezuo2">
+                                <li class="othercount"><a href="#" class="weibo" id="J_weibo" title="微博账号登录"><img src="../img/common/首页_07.jpg"/></a></li>
+                                <li class="othercount"><a href="#" class="alipay" id="J_alipay" title="支付宝账号登录"><img src="../img/common/首页_03.jpg"/></a></li>
+                                <li class="othercount"><a href="#" class="qq" id="J_qq"><img src="../img/common/首页_05.jpg"/></a></li>
+                          </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="sign-right">
+                                              <a href="http://sale.muyingzhijia.com/act/114.html" target="_blank">
+                 <img src="../img/goodList3/2.jpg" alt="新人注册APP三重礼" title="新人注册APP三重礼"></a>
+               </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <!-- end: LOGIN BOX -->
+        <!-- start: COPYRIGHT -->
+       
+        <!-- end: COPYRIGHT -->
+        <div class="foot">        
+        <div class="footer">
+            <div class="footer_top">
+                <div class="f_t_l">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+							<p><a href="#">100%正品保证</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">专业在线客服</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">满99元包邮</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">一日两送</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_t_r">
+                    <dl class="cool">
+                        <dt>新手指南</dt>
+                        <dd><a href="#">新会员注册</a></dd>
+                        <dd><a href="#">购物演示</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                    </dl>
+                    <dl class="cool">
+                        <dt>付款方式</dt>
+                        <dd><a href="#">银行卡支付</a></dd>
+                        <dd><a href="#">支付宝支付</a></dd>
+                        <dd><a href="#">余额支付</a></dd>
+                    </dl>
+                    <dl class="cool">
+						<dt>售后服务</dt>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">退换货流程</a></dd>
+                        <dd><a href="#">退款流程</a></dd>
+                        <dd><a href="#">发票说明</a></dd>
+                    </dl>
+                    <dl class="cool">
+                        <dt>特色服务</dt>
+                        <dd><a href="#">贵宾专区</a></dd>
+                        <dd><a href="#">电子刊物</a></dd>
+                        <dd><a href="#">在线客服</a></dd>
+                    </dl>
+                    <dl class="sb">
+                        <dt>帮5买生活家</dt>
+                        <dd><img src="../img/dingyue.jpg"></dd>
+                    </dl>
+                    <dl>
+                        <dt>帮5买服务号</dt>
+                        <dd><img src="../img/fuwu.jpg"></dd>
+                    </dl>
+                </div>
+            </div>
+			<div style="clear:both"></div>
+            <div class="footer_bottom">
+				<div class="footer_bottom_t">
+					<ul>
+						<li><a href="#">关于帮5买</a></li>
+						<li><a href="#">INVESTOR RELATIONS</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">服务中心</a></li>
+						<li><a href="#">加入我们</a></li>
+					</ul><br/>
+					<p>
+						<a href="#"><img src="../img/newicon.png"></a>沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+					</p>
+				</div>
+				<div class="footer_bottom_b">
+					<span><a><img src="../img/evaluate.jpg"></a></span>
+					<a><img src="../img/beian.png">沪公网安备 31010402000234号</a>
+				</div>
+			</div>
+        </div>
+	</div>        
+        
+        
+        
+        
+    </div>
+    
+    <script>
+    	
+       
+          onload = function(){
+ 				var oInput = document.getElementsByTagName("input");
+ 				
+ 				console.log(oInput);
+ 				
+ 				var oldusername = getCookie("username");
+ 				var oldpassword = getCookie("password");
+ 				
+ 				if(oldusername){
+ 					oInput[0].value = oldusername;
+ 					oInput[1].value = oldpassword;
+ 				}
+ 				
+ 				
+ 				oInput[3].onclick = function(){
+ 					
+ 					var username = oInput[0].value; //账号
+ 					var pwd = oInput[1].value;      //密码
+ 					
+ 					if(oInput[2].checked){
+ 						
+ 						var d = new Date;
+ 						d.setDate(d.getDate() + 10);
+ 						var username = setCookie("username",username,d);
+ 						var password = setCookie("password",pwd,d);
+ 						console.log(username);
+ 						
+ 						
+ 					}
+ 					
+ 					
+ 					
+ 				}
+ 				
+ 			}		
+    	
+    	
+    	
+    	
+    	
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(':submit').click(function (evt) {
+                //$('form').valid() => 触发表单验证，返回 true|false， true 表示验证通过
+                if ($(this).closest('form').valid()) {
+                    //表单验证通过后跟 api 进行 交互
+                    $.post(common.baseUrl + 'Account/login', $('form').serialize(), function (response) {
+                        if (response) {
+                            response = typeof response == 'string' ? JSON.parse(response) : response;
+                            if (response.state && response.data.projectname) {
+                                window.location.href = 'index.html';
+                            } else {
+                                $.alert(response.message);
+                            }
+                        }
+                    })
+                }
+                //阻止浏览器的默认行为，效果等同 return false
+                evt.preventDefault();
+            })
+        })
+        
+     
+        
+    </script>
+</body>
+</html>

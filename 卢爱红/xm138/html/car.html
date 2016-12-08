@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		  
+		
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			margin: 50px auto;
+			width: 1100px;
+			overflow: hidden;
+		}
+		.boxs{
+			display: none;
+			width: 1100px;
+			height: 100px;
+			background: #F0F0F0;
+			line-height: 100px;
+			text-align: center;
+		}
+		
+		.boxs a{
+			display: block;
+			margin-top: -70px;
+		}
+		
+		
+		ul li{
+			list-style: none;
+			width: 1100px;
+			height: 150px;
+			border: 1px solid gainsboro;
+			
+		}
+		
+		ul li span{ 
+			
+			float: left;
+			display: block;
+			width: 200px;
+			height:150px;
+			line-height: 150px;
+			text-align: center;
+		}
+		
+		li img{
+			float: left;
+			width: 100px;
+			height: 100px;
+			margin-top: 24px;
+			margin-left: 20px;
+		}
+		
+		ul li .span3{
+			cursor: pointer;
+			color: blue;
+		}
+		
+		.text{
+			width: 40px;
+			height: 20px;
+		}
+		
+		button{
+			width: 20px;
+			height: 20px;
+		}
+		
+			
+		</style>
+		
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+					
+				var strCookie = $.cookie("good");
+				
+				if(strCookie==undefined || strCookie==""){
+					console.log("没有购买产品")
+				}else{
+					//刷新产品列表
+					var oCookie = JSON.parse(strCookie);
+					$.each(oCookie, function() {
+						//this  //{title:title,data:{},num:num}
+						
+						var  $li = $('<li/>');
+						//添加img
+						$li.append('<img src='+this.data.img +'>');
+						$li.append('<span>'+this.title+'</span>');
+						$li.append('<span>'+this.data.price+'</span>');
+						$li.append('<span><button class="button3">'+ "-" +'</button><input class="text" type="text"  placeholder='+this.num+'><button class="button4">'+ "+" +'</button></span>');						
+						$li.append('<span class="span3">'+ "x删除" +'</span>');
+						$('ul').append($li);
+
+					});
+				}
+				
+				
+				$(".span3").click(function(){
+					
+					var $li = $(this).closest('li');
+					console.log($li)
+					var goods = $li.attr('data-goodsname');
+					//把时间设置成昨天
+					var now = new Date();
+					now.setDate(now.getDate()-1);
+					//删除cookie
+					document.cookie = goods + '=null;expires=' + now;
+					
+					$li.remove();
+				   
+			
+				
+				});
+				
+	
+				
+				
+			})
+	
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			
+			<ul class="box2">
+			<li><img src="../img/banner/timer.png"/>
+			<span  id="">
+				商品
+			</span>
+			<span  id="">
+				价格
+			</span>
+			
+			<span>
+			
+		    数量
+			
+			</span>
+		
+			
+			<span class=" btn_close">操作</span>
+			
+			</li>
+			
+		<div class="boxs">
+			
+			<p>你目前还没有商品哦</p><a href="2list.html">请你回到主页添加商品</a>
+			
+		</div>	
+		</ul>
+			
+		</div>
+
+	</body>
+</html>

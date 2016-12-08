@@ -1,0 +1,105 @@
+.banner1{width: 1200px; height: 40px; width: 100%; overflow: hidden;line-height: 40px;}
+.banner1 a{ display:block; float: left;margin-left: 20px;}
+.banner1 p{float: left;}
+
+
+.information{ overflow: hidden; width: 1145px;}
+.information .infor_top{width:1145px;height:987px;margin-top: 20px; overflow: hidden;}
+.information .getmore{width:1000px;height:522px;background:white; position: absolute;left: 50px; top: 250px; padding:0 37px;}
+
+.information .getmore .tobig{position:relative;width:210px;height:210px;position:absolute;left:490px;top:20px;overflow:hidden;border:1px solid #e8e8e8;}
+.information .getmore .tobig img{position:absolute;width:564px;height:728px}
+.information .getmore .get_left dl dt{width:412px;height:364px;text-align:center;border:1px solid #e8e8e8;margin-top:20px}
+.information .getmore .get_left dl dt .fang{z-index:10;width:100px;height:100px;position:absolute;cursor:crosshair;left:0;top:0;box-shadow: -0px -0px 10px rgba(0,0,0,0.10);}
+
+.information .getmore .get_left dl dt .smallx{width:300px;height:366px;position:relative;margin:0 auto}
+.information .getmore .get_left dl dt img{width:290px;height:364px;}
+.information .getmore .get_left dl dd img{width:95px;height:92px;border:1px solid #e8e8e8;margin-top:20px;margin-right:15px}
+
+
+.information .getmore .get_right{position: absolute; right: 0; top: 110px;}
+
+.information .getmore .get_right dl{margin-left:46px}
+.information .getmore .get_right dl dt{width:460px;font-size:15px;color:#888;height:62px;border-bottom:1px dashed #e8e8e8;line-height:62px}
+.information .getmore .get_right dl .news1{height:40px;line-height:40px;color:#888}
+.information .getmore .get_right dl .news1 a{color:#888}
+.information .getmore .get_right dl .news2{color:#cc3333;font-size:18px;height:32px;line-height:32px;font-weight:bold}
+.information .getmore .get_right dl .price{margin-right: 400px;}
+.information .getmore .get_right dl .news3 .toshop{width:140px;border:none;height:34px;margin-right:35px;background:#d20049;color:white}
+.information .getmore .get_right dl .news3 .tocollect{width:100px;height:34px;color:#888}
+.information .getmore .get_right dl .valueN{font-weight: bold; color: #000000; font-size: 20px;}
+.information .getmore .get_right dl .news3 .tocollect:hover{color:#666}
+.information .getmore .get_right dl .news4{margin-top:15px}
+.information .getmore .get_right dl .news5{margin-top:40px;font-weight:bold;color:#cc3333;font-size:15px}
+#wrap{width: 100%;margin:0 auto;}
+.information .infor_bottom{width:1074px; position: absolute;left: 50px; top: 892px; overflow: hidden;}
+#wrpbiao{width: 100%;margin: 0 auto; overflow: hidden;}
+.information .biao{width: 1074px; height: 110px; position: absolute;left: 50px; top: 782px; overflow: hidden;}
+.information .biao img{float: left; margin-right: 188px; margin-top: 25px;}
+.information .biao img.lsa{margin-right: 0;}
+.information .infor_bottom .infor-left{width: 270px; height: 1600px;background: white;border: 1px solid gainsboro; float: left;}
+.information .infor_bottom .infor-right{width: 788px; height: 5920px; background: white;border: 1px solid gainsboro; float: left; margin-left: 11px; overflow: hidden;}
+.information .infor_bottom .infor-left .infor-left-top{width: 270px; height: 40px; background: rgb(237,20,91); line-height: 40px; text-align: center; color: white; font-size: 16px;}
+.information .infor_bottom .infor-left .infor-left-conter{width: 200px; height: 200px; text-align: center; margin-top: 20px; margin-left: 35px;} 
+.information .infor_bottom .infor-left .infor-left-conter img{width: 190px; height: 190px;}
+.information .infor_bottom .infor-left .infor-left-conter p{margin-top: 10px; margin-top: 10px;}
+
+.information .infor_bottom .infor-left .infor-left-conter span{color:rgb(255,147,180) ; font-size: 16px;}
+.information .infor_bottom .infor-right .b1{float: left; width: 70px; height: 45px; background: gainsboro;line-height: 45px; text-align: center; font-size: 14px;}
+.information .infor_bottom .infor-right .infor-all{width: 788px; height: 6920px; overflow: hidden;}
+.information .infor_bottom .infor-right .infor-1{width: 295px; height: 295px; float: left;}
+.information .infor_bottom .infor-right .infor-2{margin-top:20px;}
+.information .infor_bottom .infor-right .infor-all .in{width: 788px; height: 300px; margin-top: 24px; margin-left: 10px;}
+
+.information .infor_bottom .infor-right .infor-all .infor-3 {width: 300px; height: 200px; float: left; margin-left: 90px; margin-top: 60px;}
+.information .infor_bottom .infor-right .infor-all .infor-3 .a1{width: 210px; height: 40px; border-bottom: 1px dashed gainsboro; line-height: 40px;  font-size: 16px;}
+.information .infor_bottom .infor-right .infor-all .infor-4 {margin-top: 100px; margin-left: 30px;}
+.information .infor_bottom .infor-right .infor-all .infor-x{width: 550px; height: 460px ; border: 1px solid sandybrown; margin-left: 100px; margin-top: 36px;}
+
+.information .infor_bottom .infor-right .infor-all .infor-x .q1{width: 190px; height: 210px;float: left;margin-right: 10px; padding-left: 60px; margin-top: 20px;}
+.information .infor_bottom .infor-right .infor-all .infor-x .q1 h3{font-size: 30px; margin-top: 30px; margin-left: 15px;}
+.information .infor_bottom .infor-right .infor-all .infor-x .q1 p{font-size: 18px; margin-top: 5px;}
+.information .infor_bottom .infor-right .infor-all .infor-y{width: 788px; height: 390px; background: url(../img/goodDetail/h2.png) no-repeat center 90px;} 
+.information .infor_bottom .infor-right .infor-all .infor-r{width: 788px; height: 500px; margin-top: 20px; line-height: 60px; text-align: center;}
+.information .infor_bottom .infor-right .infor-all .infor-r h4{font-size: 30px; margin-bottom: 10px;width: 788px; height: 60px;}
+
+#brand{width:788px;height:500px;box-shadow:0px 0px 5px #dddddd;}
+
+#brand .bd-box{	width:743px;height:500px;overflow:hidden;padding-left: 35px;  margin-top: 20px;}			
+#brand .bd-box li{float:left;width:90px;height:60px;overflow:hidden;position:relative;margin:10px 10px 0px 12px; margin-left: 19px; border:1px solid #e9e8e8;}				
+#brand .bd-box li img{width:90px;	height:60px;position:absolute;	left:0px;top:0px;z-index:2;overflow:hidden;}
+#brand .bd-box li span{	width:90px;height:0px;	border:1px solid #e9e8e8;position:absolute;left:0px;top:38px;	z-index:1;text-align:center;line-height:60px;font-size:14px;color:#FFF;	background:#ffa340;font-weight:bold;overflow:hidden;display:none;}
+#brand .bd-box li a{width:90px;height:60px;position:absolute;left:0px;top:0px;z-index:3;}	
+
+
+.infor_bottom .infor-right .infor-all .infor-t{width: 788px;  overflow: hidden; margin-top: 70px; min-height: 700px;}			
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-1{height: 40px; }			
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-2{width: 788px; height: 50px; line-height: 50px; background: gainsboro; margin-top: 20px; border: 1px solid darkgray;}
+
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-2 li{ float: left; line-height: 50px; height: 50px;background: gainsboro; padding: 0 15px; border-right: 1px solid darkgray;  color: darkgray; font-size: 16px; }
+
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3{width: 788px; min-height: 200px; height: 100%;overflow: hidden;}
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3 li{height: 40px; width: 700px; border-bottom: 1px dashed gainsboro;  margin-left: 20px; line-height: 40px;}
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3 a{display: block;}
+
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3-1{width: 788px; min-height: 200px;  height: 100%; overflow: hidden;}
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3-1 li{height: 40px; width: 700px; border-bottom: 1px dashed gainsboro;  margin-left: 20px; line-height: 40px;}
+.infor_bottom .infor-right .infor-all .infor-t .infor-t-3-1 a{display: block;}
+
+.information .infor_bottom .infor-right .infor-all .infor-t .infor-t-3-2{width: 788px; min-height: 200px;  height: 100%; overflow: hidden;}
+.information .infor_bottom .infor-right .infor-all .infor-t .infor-t-3-2 li{height: 40px; width: 700px; border-bottom: 1px dashed gainsboro;  margin-left: 20px; line-height: 40px;}
+.information .infor_bottom .infor-right .infor-all .infor-t .infor-t-3-2 a{display: block;}
+
+
+.infor_bottom .infor-right .infor-all .infor-u{width: 788px; overflow: hidden; margin-top: 50px;}			
+.infor_bottom .infor-right .infor-all .infor-u1{width: 788px; height: 40px;}
+.infor_bottom .infor-right .infor-all .infor-u2{width: 788px; height: 50px; line-height: 50px; margin-top: 10px;}
+.infor_bottom .infor-right .infor-all .infor-u2 img{margin-left: 25px; float: left;}
+.infor_bottom .infor-right .infor-all .infor-u2 .z{float: left; margin-left: 5px; margin-top: 7px;}
+
+.infor_bottom .infor-right .infor-all .infor-u3{width: 788px; margin-top: 10px;  overflow: hidden;}
+.infor_bottom .infor-right .infor-all .infor-u3-1{width: 788px; height: 100px; margin-left: 30px; margin-bottom: 30px;}
+.infor_bottom .infor-right .infor-all .infor-u3-1 h3{font-weight: 700; font-size: 14px; padding-top: 30px;}
+.infor_bottom .infor-right .infor-all .infor-u3-1 p{margin-top: 5px;}
+
+

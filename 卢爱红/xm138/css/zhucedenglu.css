@@ -1,0 +1,44 @@
+ *{
+			  	 margin: 0;
+			  	 padding: 0;
+			  }
+#shuruyz{float:left;}
+#yztu{width:80px;height:21px;align:absmiddle;}
+#message{float: left;}
+
+#tongyi{min-height: 20px; margin-top: 10px;}
+
+.tongyi1{ margin-top: 20px;}
+.tongyi1 .agreement-text { margin-top: 20px;}
+#zhuceye{position: relative;}
+/*提示栏的样式*/
+.Tip{/*display: none;*/ background:white;width: 210px;height: 20px;border-radius: 10px;color: red;text-align: center;margin-left: 90px;}
+/*logo部分*/
+#zcdl-logo{padding: 10px 110px;}
+#zhucdl{position: relative; background: rgb(236,236,236);width: 100%;height: 600px;}
+/*注册登录位置*/
+.zhucedenglu{position: absolute;left: 500px;top: 10px;}
+.zhucedenglu li{display: inline-block;padding: 10px 100px;border:1px solid  #E7E7E7;background:#F1F1F1;}
+/*整个表单框的位置*/
+#zhuce-left1{margin-top: 20px;margin-left: 40px;}
+.zhucedenglu li a{color:rgb(136,136,136);}
+/*验证码框*/
+#idcode{position: absolute;left: 350px;top: 200px;}
+/*表单框*/
+.zhuce-left{position: absolute;left: 210px;top: 53px;background: white;width: 600px;}
+/*input输入框的位置*/
+.zhuce-left .inputCont input{width: 200px;height: 25px;margin-bottom: 10px;}
+/*输入框并列*/
+.zhuce-left2 .label{float: left;}
+.sign-right,.zhuce-left{display: inline-block;}
+.sign-right{position: absolute;top: 47px;right: 80px;padding:78px 90px;background:white;}
+.sign-right img{width: 300px; height: 300px;}
+/*提交验证码的按钮大小*/
+#butn{width: 50px;}
+#butn1{width: 60px;height: 28px;position: absolute;left: 350px;top: 255px; font-size: 15px;}
+#butn2{width: 200px;height: 40px;background: #FF3300;margin-left: 90px;border: none;color: white;font-size: 20px;}
+/*合作账号图片*/
+.hezuo2 li{display: inline-block;}
+/*合作账号位置*/
+.hezuo{margin-left: 90px;}
+.footer{margin-top: 0;}

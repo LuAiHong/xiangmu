@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			ul,li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+				
+				
+			}
+			a:visited{
+				color: black;
+			}
+			a:hover{
+				color: black;
+			}
+			li{
+				float: left;
+				width: 280px;
+				height: 300px;	
+				margin-right: 5px;
+				margin-bottom: 5px;
+				position: relative;
+				background: white;
+				
+			}
+			img{
+				width: 200px;
+				height: 200px;
+				
+				
+			}
+			li img{
+				position: absolute;
+				top: 30px;
+				left: 40px;
+			}
+			
+			li span.tit{
+				position: absolute;
+				top: 220px;
+				left: 100px;
+			}
+			li span.pri{
+				font-size: 18px;
+				font-weight: 800;
+				color: red;
+				position: absolute;
+				bottom: 10px;
+				left: 60px;
+			}
+			
+			#list{
+				margin-top: 40px;
+				width: 1170px;
+				height: 1200px;
+				margin: 0 auto;
+			}
+			ul{
+				background: #F0F0F0;
+				width: 1170px;
+				height: 1200px;
+				border: solid gainsboro 1px;
+			}
+			li a{
+				
+				color: white;
+				background: rgb(197,0,72);
+				display: block;
+				position: absolute;
+				bottom: 5px;
+				right: 10px;
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				
+				
+			}
+			
+		.top1{
+			width: 1140px;
+			height: 40px;
+			line-height: 40px;
+		}	
+			
+		.mycart{
+			display: block;
+			width: 80px;
+			height: 30px;
+		
+			line-height: 30px;
+			
+			
+		}	
+		
+		.top1 img{
+			width: 30px;
+			height: 30px;
+			margin-left: 90px;
+			margin-top: -20px;
+		}
+		</style>
+		
+		<script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+		
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript">
+//			var jsonstr = '{"data":[{"name":"jjk"},{"name":"jjk2"}]}';
+//			
+//			console.log( JSON.parse(jsonstr) );
+
+			$(function(){
+				
+				$.ajax({
+					type:"get",
+					url:"../json/good.json",
+					success:function(res){
+//						console.log(res);
+//						console.log(typeof res);
+//						console.log(res.data[0].img);
+						update(res.data);
+						
+					}
+				})
+				//刷新界面
+				function update(data){
+					//console.log(data);
+					
+					$.each(data,function(){
+//						console.log(this);
+						var $li = $('<li/>');
+						$('<img src="'+ this.img+'" alt="" />').appendTo($li)
+						$('<a href="#">'+ this.title3+'</a>').appendTo($li);
+						$('<span class="tit">'+ this.title+'</span>').appendTo($li);
+						$('<span class="pri">'+this.price+'￥</span>').appendTo($li);
+						
+						$li.appendTo($('#list ul'));
+					})
+					
+					$('#list ul').on('click','a',function(e){
+						//e.target    //点击的a 标签；
+						
+						console.log("购买商品");
+						//把产品信息存在cookie里面
+						
+						 //获取title
+						 var title = $(e.target).parent().find('.tit').html();
+						 
+						 //price
+						 var price = $(e.target).parent().find('.pri').html();
+						 
+						 //img
+						 var img = $(e.target).parent().find('img').attr('src');
+						 
+						 //新的产品信息
+						 var obj = {"title":title,"price":price,"img":img};
+//						 
+						 var strCookie =  $.cookie("good");    //strCookie 是存在cookie里面的产品信息
+						 
+						 console.log(strCookie);
+//						
+//						
+//						//将cookie字符串转换成对象；
+//						
+//						//oCookie保存了所有的产品信息
+
+						//对返回的cookie 进行判断 如果为空 
+						
+						var  bGood = false;  //代表没有信息
+						if(strCookie == undefined || strCookie =="" ){
+
+							
+														//如果完成没有产品信息
+							var oCookie = [];
+							var newGood = {"title":title,data:obj,num:1}//新的完整的产品信息
+							oCookie.push(newGood);
+
+						}else{
+							var oCookie = JSON.parse(strCookie);
+							//[{title:商品名称,data:{title:title,price:price,img:url},num:购买的数量},{}]
+							//目的 查找商品是否已经有购买信息
+							//如果有购买信息 num+1
+							//没有 生成一个新的产品信息
+							
+							$.each(oCookie,function(){
+								//如果在cookie里面能够找到产品信息  
+								//对数量+1 num+1
+								if(this.title ==title){
+									var num = parseInt(this.num)+1;   //为了防止num是字符串 讲字符串转换成int
+									this.num = num;
+									bGood =true  ;  //表示产品有信息
+								}
+							})
+							
+							//cookie存在产品信息 但是没有当前购买的产品的信息
+							if(bGood==false){
+								//生成新的商品信息
+								var newGood = {"title":title,data:obj,num:1}//新的完整的产品信息
+								oCookie.push(newGood);
+							}
+						}
+			
+//						//$.cookie('good',"将要保存的产品信息");
+//						//表示没有商品信息
+//						if(bGood==false){
+//							//生成新的商品信息
+//							var newGood = {"title":title,data:obj,num:0}//新的完整的产品信息
+//							oCookie.push(newGood);
+//							
+//						}
+//						
+//						//重新设置cookie
+						$.cookie("good",JSON.stringify(oCookie),{expires:7 , path:"/"});
+//						
+						console.log($.cookie("good") );
+						
+						//json
+						
+						//[{title:商品名称,data:{title:title,price:price,img:url},num:购买的数量},{}]					
+					})
+				}
+			})
+		</script>
+	</head>
+	<body>
+		
+		<div class="top1">
+			<a class="mycart" href="car.html">我的购物车</a>
+			<img src="../img/carts/shop.png"/>
+		</div>
+		
+		
+		<div id="list">
+			<ul>
+				<!--<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span class="tit">title</span>
+					<span class="pri">15.00元</span>
+				</li>
+				<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span>title</span>
+					<span>15.00元</span>
+				</li>
+				<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span>title</span>
+					<span>15.00元</span>
+				</li>
+				<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span>title</span>
+					<span>15.00元</span>
+				</li>
+				<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span>title</span>
+					<span>15.00元</span>
+				</li>
+				<li><img src="img/1.jpg" alt="" />
+					<a href="#"></a>
+					<span>title</span>
+					<span>15.00元</span>
+				</li>-->
+			</ul>
+		</div>
+		
+		
+	</body>
+</html>

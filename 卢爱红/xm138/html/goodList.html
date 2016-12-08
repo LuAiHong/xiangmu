@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/goodList.css" />	
+	
+    <script type="text/javascript" src="../lib/jquery-1.12.3.js" ></script>
+    <script type="text/javascript" src="../js/list.js" ></script>
+    <script type="text/javascript" src="../js/common.js" ></script>
+
+	
+	 <script>
+	 	$(function(){
+	 		
+	 		hearder();
+	 		
+	 	
+        $.get('../json/goodsLista.json', function(obj){
+          var goodsList=obj.data;
+          console.log(goodsList)
+          $.each(goodsList,function(index,val){
+            console.log(val);
+
+            $('.list1').append('<li><a href=" '+val.url+'"><img src="' + val.img+'"></a>'+
+                '<div><p class="title">'+val.title+'</p><p class="content">'+val.content+'</p><div class="bottom clearfix"><span class="style">'+val.style+'</span><span class="price">￥'+val.price+'</span></div></div>'
+                +'</li>')
+            // $('.list li img').attr('src',val.img);
+          })
+        })
+   
+	 	$.get('../json/goodsList3.json', function(obj){
+          var goodsList=obj.data;
+          console.log(goodsList)
+          $.each(goodsList,function(index,val){
+            console.log(val);
+
+            $('.list3').append('<li><a href=" '+val.url+'"><img src="' + val.img+'"></a>'+
+                '<div><p class="title">'+val.title+'</p><p class="content">'+val.content+'</p><div class="bottom clearfix"><span class="style">'+val.style+'</span><span class="price">￥'+val.price+'</span></div></div>'
+                +'</li>')
+            // $('.list li img').attr('src',val.img);
+          })
+        })
+	 	
+	 	$.get('../json/goodsList4.json', function(obj){
+          var goodsList=obj.data;
+          console.log(goodsList)
+          $.each(goodsList,function(index,val){
+            console.log(val);
+
+            $('.list4').append('<li><a href=" '+val.url+'"><img src="' + val.img+'"></a>'+
+                '<div><p class="title">'+val.title+'</p><p class="content">'+val.content+'</p><div class="bottom clearfix"><span class="style">'+val.style+'</span><span class="price">￥'+val.price+'</span></div></div>'
+                +'</li>')
+            // $('.list li img').attr('src',val.img);
+          })
+        })
+	 	
+	 	
+	 	
+	 	
+
+	 	});
+	 	
+	 	
+	 </script>
+	</head>
+	<body>
+		
+	
+	<!--nav-->
+	<div class="nav">
+		
+		<div class="right_topic">
+			<div class="kefu">
+				
+			</div>
+			<div class="kefu">
+				<a href="index.html"><img src="../img/kefu.png"/></a>
+			</div>
+			<div class="right_phone">
+				<a><img src="../img/right_phone.png"/></a>
+				<a><img class="kefutell" src="../img/kefu1.png"/></a>
+			</div>
+			<div class="kefu">
+				
+			</div>
+			<div class="kefu">
+				
+			</div>
+			<div class="kefu">
+				
+			</div>
+			
+			
+			<div class="kefu">
+				<a href="#"><img id="s" src="../img/carts/shoping.png"/></a>
+				
+			</div>
+			<div class="kefu">
+			
+			
+			</div>
+			
+			<div class="kefu">
+				
+			</div>
+			
+			
+		</div>
+	</div>
+	
+
+	<div class="main-header">  
+	<div class="header-bar"><!--top1-->
+		<div class="w1200"> 
+	
+			<ul class="fl nav-top"> <!--top1_左-->
+				<li class="fl mfr-5 w88"><!--//语言-->
+					<a class="down" href="javascript:;">
+						<s class="qizhi-CNY"></s>帮5买，享帮帮<s class="minicart_arrow"></s>
+					</a>
+					
+				</li>
+			</ul>
+			
+	
+			<ul class="fr nav-top"><!--top1_右-->
+				<li class="fl mfr-5">
+					<a class="login" href="#"><img src="../img/common/首页_03.jpg"></a>
+				</li><li class="fl mfr-5">
+					<a class="login" href="#"><img src="../img/common/首页_05.jpg"/></a>
+				</li>
+				<li class="fl mfr-5">
+					<a class="login" href="#"><img src="../img/common/首页_07.jpg"/></a>
+				</li>
+				<li class="fl mfr-5"><!--登录-->
+					<a class="login" href="../assets/login2.html">登录</a>
+				</li>
+				
+				<li class="fl mfr-5"><!--注册-->
+					<a class="login" href="../assets/signup.html">注册</a>
+				</li>
+
+				<li class="fl mfr-5 w90"><!--个人中心-->
+					<a class="down" href="#"><img src="../img/common/tp-my-phone.png-t=201609202026.png"<s class="minicart_arrow">手机版</s></a>
+					<ol class="xs li-b"><!--li的子级菜单-->
+						<li>
+							<a href="#">
+							<img src="../img/common/app.jpg">
+							</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div> 
+	</div>
+	<div class="site-header"><!--top2-->
+		<div class="w1200">
+			<div class="logo fl"><!--logo-->
+				<a href="#/"><img src="../img/common/shou.png"></a>
+			</div>
+			
+			<div class="header-cart"><!--购物车-->
+				<div class="down" href="#"><a class ="down1" href="#"><img src="../img/common/tp-my-phone-1.png.png"/>400-820-0539</a><a class="down2" href="#"><i ></i>kefu@gshopper</a><a class="down3" href="#">常见问题</a></div>
+			</div>
+			<form action="#" method="get"><!--表单-查找-->
+				<div class="tps-search fr clear">
+					<input name="keywords" class="search-text" placeholder="在这里，淘遍全球正品好货">
+					<button type="submit" target="_blank"><s>搜索</s></button><!--提交按钮-->
+				</div>
+			</form>
+			
+		</div>
+		<div class="list" style=" width: 600px; height: 20px; margin-left: 230px;"><a style="color: red;" href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a><a href="#">养生保健</a></div>
+	</div>
+	<!--</header>-->
+	<main><!--top3-->
+		<div class="nav-wp">
+			<div class="w1200">
+				<div class="catalog fl" id="cat">
+					<h3>首页<i class="fa fa-angle-down"></i></h3>
+					<div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+							<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+							<dd class="submenu clear"><!--服饰箱包-子级-->
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">箱包<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">时尚女包</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-2"><!--母婴用品-->
+							<dt class="clear"><a href="#" class="category">母婴用品</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">婴幼儿奶粉<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">可瑞康</a>
+										<a href="#">爱他美</a>
+										<a href="#">惠氏</a>
+										<a href="#">荷仕兰</a>
+										<a href="#">维达宝</a>
+										<a href="#">WINNEY温妮</a>
+										<a href="#">德国喜宝Hipp</a>
+										<a href="#"> 荷兰美素</a>
+										<a href="#">牛栏</a>
+
+									</li>
+								</ul>
+								<ul class="clear"><!--成人奶粉-->
+									<li class="b-t">
+										<a href="#">成人奶粉<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">WINNEY温妮</a>
+										<a href="#">Medallion</a>
+										<a href="#">雅培</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">喂养洗护用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">水杯</a>
+										<a href="#">宝宝护肤</a>
+										<a href="#">日常护理</a>
+										<a href="#">奶瓶</a>
+										<a href="#">奶瓶配件</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">婴儿纸尿裤</a>
+										<a href="#">婴儿拉拉裤</a>
+										<a href="#">湿巾</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">婴童服饰<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">小背包</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">玩具乐器<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">DIY玩具</a>
+										<a href="#">早教启智</a>
+										<a href="#">毛绒玩具 / 布艺玩具</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">儿童/宝宝面条</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-3"><!--美妆个护-->
+							<dt class="clear"><a href="#">美妆个护</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">洗发护发<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">洗发</a>
+										<a href="#">护发</a>
+										<a href="#">染发</a>
+										<a href="#">造型</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">魅力彩妆<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">底妆</a>
+										<a href="#">睫毛膏</a>
+										<a href="#">美妆工具</a>
+										<a href="#">唇部</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">面部护理<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">套装</a>
+										<a href="#">眼霜</a>
+										<a href="#">爽肤水</a>
+										<a href="#">乳液面霜</a>
+										<a href="#">精华</a>
+										<a href="#">防晒隔离</a>
+										<a href="#">美容工具</a>
+										<a href="#">面膜</a>
+										<a href="#">洁面</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">两性护理<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">清洁用品</a>
+										<a href="#">私密护理</a>
+										<a href="#">卫生巾</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">口腔护理<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">牙膏/牙粉</a>
+										<a href="#">漱口水</a>
+										<a href="#">牙刷</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">香水<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">Bvlgari</a>
+										<a href="#">Burberry</a>
+										<a href="#">Hermes</a>
+										<a href="#">Guerlain</a>
+										<a href="#">CK</a>
+										<a href="#">Lanvin</a>
+										<a href="#">Chanel </a>
+										<a href="#">Dior</a>
+										<a href="#">Gucci</a>
+										<a href="#">Ferragamo</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">身体护理<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">精油</a>
+										<a href="#">手足</a>
+										<a href="#">沐浴润肤</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-4"><!--汽车用品-->
+							<dt class="clear"><a href="#"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">车载电器<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">净化器</a>
+										<a href="#">电源</a>
+										<a href="#">行车记录仪</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">汽车装饰<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">空气净化</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-5"><!--运动，户外用品-->
+							<dt class="clear"><a href="#" class="category">运动，户外用品</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">高尔夫</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">健身训练<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">甩脂机</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-6"><!--营养保健-->
+							<dt class="clear"><a href="#" class="category">营养保健</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">血压计</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">成人用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">安全避孕</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">保健食品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">滋补养生</a>
+										<a href="#">肠胃养护</a>
+										<a href="#">蜂蜜/蜂产品</a>
+										<a href="#">骨骼健康</a>
+										<a href="#">玛咖</a>
+										<a href="#">酵素</a>
+										<a href="#">调节免疫</a>
+										<a href="#">Organika</a>
+										<a href="#">美体瘦身</a>
+										<a href="#">美容养颜 </a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">健康用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">肩部护理</a>
+										<a href="#">眼部护理</a>
+										<a href="#">睡眠辅助</a>
+										<a href="#">足部护理</a>
+										<a href="#">腰部护理</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">创口贴/绷带</a>
+										<a href="#">口罩</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">家庭护理<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">居家必备</a>
+										<a href="#">驱蚊</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-7">
+							<dt class="clear"><a href="#" class="category">食品、酒水</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">进口食品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">粮油调味</a>
+										<a href="#">休闲零食</a>
+										<a href="#">饮品</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">生鲜<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">蔬果</a>
+										<a href="#">冷冻食品</a>
+										<a href="#">海鲜水产</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">粮油调味<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">面</a>
+										<a href="#">南北干货</a>
+										<a href="#">食用油</a>
+										<a href="#">厨房调味</a>
+										<a href="#">蛋</a>
+										<a href="#">大米</a>
+										<a href="#">杂粮</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">中外名酒<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">果酒</a>
+										<a href="#">啤酒</a>
+										<a href="#">洋酒</a>
+										<a href="#">养生酒</a>
+										<a href="#">葡萄酒 </a>
+										<a href="#">香槟</a>
+										<a href="#">白酒</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">地方特产<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">贵州特产</a>
+										<a href="#">山西特产</a>
+										<a href="#">福建特产</a>
+										<a href="#">西北特产</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">茶叶<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">苦荞茶</a>
+										<a href="#">高山茶</a>
+										<a href="#">红茶</a>
+										<a href="#">养生茶</a>
+										<a href="#">绿茶</a>
+										<a href="#">白茶</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">休闲食品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">休闲零食</a>
+										<a href="#">饮品</a>
+										<a href="#">月饼</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-8">
+							<dt class="clear"><a href="#" class="category">家居日用</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">厨具<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">刀具套装</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="https://www.tps138.com/index/category?sn=CxFp8RavcO">清洁用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">纸品湿巾</a>
+										<a href="#">家庭清洁</a>
+										<a href="#">洗洁精</a>
+										<a href="#">衣物洗护</a>
+										<a href="#">净化除味</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">厨房配件<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#"> 储物/置物架</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">精美餐具<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">碗具</a>
+										<a href="#">保温杯</a>
+										<a href="#">玻璃杯</a>
+										<a href="#">陶瓷杯</a>
+										<a href="#">功夫茶具</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">烹饪锅具<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">炒锅</a>
+										<a href="#">汤锅</a>
+										<a href="#">蒸锅</a>
+										<a href="#">煎锅</a>
+										<a href="#">煲类</a>
+										<a href="#">多用途锅</a>
+										<a href="#">烧烤盘</a>
+										<a href="#">套锅</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">床上用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">被子枕头</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">五金/工具<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">卫浴/龙头</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">生活用品<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">毛巾浴巾</a>
+										<a href="#">鞋袜类</a>
+										<a href="#">其他用品</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">家用电器<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">厨房小电</a>
+										<a href="#">个护健康</a>
+										<a href="#">灯具</a>
+										<a href="#">净水设备</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-9">
+							<dt class="clear"><a href="#" class="category">钟表首饰</a><i class="fa fa-angle-right"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">戒指<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">钻石</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">手表<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">浪陀</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">耳饰类<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">银质</a>
+										<a href="#">钻石</a>
+										<a href="#">珍珠</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">项链/吊坠类<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">翡翠玉石</a>
+										<a href="#">水晶玛瑙</a>
+										<a href="#">钻石</a>
+										<a href="#">K金</a>
+										<a href="#">珍珠</a>
+										<a href="#">银饰</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">眼镜<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">手镯/手链类<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">钻石</a>
+										<a href="#">水晶玛瑙</a>
+										<a href="#">银饰</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+						<dl class="dl-10">
+							<dt class="clear"><a href="#"></i></dt>
+							<dd class="submenu clear">
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">智能设备<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">智能家居</a>
+										<a href="#">智能眼镜</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">影音娱乐<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">音箱/音响</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">耳机<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">电脑<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">Dell</a>
+
+									</li>
+								</ul>
+								<ul class="clear">
+									<li class="b-t">
+										<a href="#">手机配件<i class="fa fa-angle-right"></i></a>
+									</li>
+									<li class="n-r">
+										<a href="#">数据线</a>
+										<a href="#">车载配件</a>
+										<a href="#">手机保护套</a>
+										<a href="#">充电器</a>
+										<a href="#">移动电源</a>
+
+									</li>
+								</ul>
+							</dd>
+
+						</dl>
+					</div>
+				</div>
+				<ul class="menu-normal fl"><!--top3-list右-->
+
+					<li>
+						<div class="catalog fl">
+					    <h3>美妆个护<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+					    	
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li>
+						<div class="catalog fl">
+					    <h3>母婴专区<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li>
+						<div class="catalog fl">
+					    <h3>服饰鞋包<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li>
+						<div class="catalog fl">
+					    <h3>家居生活<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li>
+						<div class="catalog fl">
+					    <h3>食品保健<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li>
+						<div class="catalog fl">
+					    <h3>数码家电<i class="fa fa-angle-down"></i></h3>
+					    <div class="menu-cate-all-out">
+						<dl class="dl-1"><!--服饰箱包-->
+						<dt class="clear"><a href="#" class="category">服饰箱包</a><i class="fa fa-angle-right"></i></dt><!--服饰箱包-->
+						</dt>
+						</dl>
+						</div>
+				</div>
+					</li>
+
+					<li class="last">
+						<div class="catalog fl">
+					    <h3>韩国直邮<i class="fa fa-angle-down"></i></h3>
+					   
+				</div>
+					    
+					    
+					</li>
+					
+				</ul>
+				<div class="youa"><img src="../img/common/service_small.png"/></div>
+			</div>
+			
+		</div>
+		
+    </div>
+<!--banner-->	
+<div id="wrap-banner">
+<div class="banner">
+ <div class="banner1">
+ 	<a href="index.html">首页&gt;</a><a href="goodList.html">美妆个护</a>
+ </div>	
+
+
+
+
+ <div class="banner2">
+ 	<div class="banner2-1"><p>类目:</p><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">
+ 		面部护理</a><a href="goodDetaill.html">面部护理</a></div>
+    <div class="banner2-1"><p>品牌:</p><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">
+    	面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a></div>
+    <div class="banner2-2">
+    	<a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">
+    	面部护理</a></div>
+    <div class="banner2-3">
+    	
+    	<a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">
+    	面部护理</a>
+    </div>
+    
+    <div class="banner2-4"><p>类目:</p><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">面部护理</a><a href="goodDetaill.html">
+ 		面部护理</a><a href="goodDetaill.html">面部护理</a></div>
+ </div>
+	<!--content-->
+<div class="content">
+	<ul class="list1 clearfix">
+		</ul>
+		
+</div>	
+
+<div class="list_b_b">
+		<ul class="list3 clearfix">
+		</ul>
+		
+	</div>
+	
+<div class="list_b_c">
+		<ul class="list4 clearfix">
+		</ul>
+		
+	</div>	
+
+
+ </div>	
+ 
+ </div>		
+
+<div id="wrap-foot">
+	
+	
+	
+	   <div class="skip">
+				<p class="alone alone1 left"><a href="#">上一页</a></p>
+				<ul id="wuli">
+					<li ><a class="change firstone" href="#">1</a></li>
+					<li ><a class="change" href="#">2</a></li>
+					<li ><a class="change" href="#">3</a></li>
+				</ul>
+				<p class="alone alone2 left"><a href="#">下一页</a></p>
+		</div>
+
+	
+</div>
+
+ <div class="foot">        
+        <div class="footer">
+            <div class="footer_top">
+                <div class="f_t_l">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+							<p><a href="#">100%正品保证</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">专业在线客服</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">满99元包邮</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../img/bg_1.png"/></a>
+                            <p><a href="#">一日两送</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_t_r">
+                    <dl class="cool">
+                        <dt>新手指南</dt>
+                        <dd><a href="#">新会员注册</a></dd>
+                        <dd><a href="#">购物演示</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                    </dl>
+                    <dl class="cool">
+                        <dt>付款方式</dt>
+                        <dd><a href="#">银行卡支付</a></dd>
+                        <dd><a href="#">支付宝支付</a></dd>
+                        <dd><a href="#">余额支付</a></dd>
+                    </dl>
+                    <dl class="cool">
+						<dt>售后服务</dt>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">退换货流程</a></dd>
+                        <dd><a href="#">退款流程</a></dd>
+                        <dd><a href="#">发票说明</a></dd>
+                    </dl>
+                    <dl class="cool">
+                        <dt>特色服务</dt>
+                        <dd><a href="#">贵宾专区</a></dd>
+                        <dd><a href="#">电子刊物</a></dd>
+                        <dd><a href="#">在线客服</a></dd>
+                    </dl>
+                    <dl class="sb">
+                        <dt>帮5买生活家</dt>
+                        <dd><img src="../img/dingyue.jpg"></dd>
+                    </dl>
+                    <dl>
+                        <dt>帮5买服务号</dt>
+                        <dd><img src="../img/fuwu.jpg"></dd>
+                    </dl>
+                </div>
+            </div>
+			<div style="clear:both"></div>
+            <div class="footer_bottom">
+				<div class="footer_bottom_t">
+					<ul>
+						<li><a href="#">关于帮5买</a></li>
+						<li><a href="#">INVESTOR RELATIONS</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">服务中心</a></li>
+						<li><a href="#">加入我们</a></li>
+					</ul><br/>
+					<p>
+						<a href="#"><img src="../img/newicon.png"></a>沪ICP备05003606号Copyright©2011-2015 MecoxLane Inc. All Rights Reserved
+					</p>
+				</div>
+				<div class="footer_bottom_b">
+					<span><a><img src="../img/evaluate.jpg"></a></span>
+					<a><img src="../img/beian.png">沪公网安备 31010402000234号</a>
+				</div>
+			</div>
+        </div>
+	</div> 
+	
+
+
+	</body>
+</html>
